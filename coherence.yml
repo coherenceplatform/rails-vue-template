@@ -20,6 +20,7 @@ backend:
   migration: ["rails", "db:migrate"]
   dev: ["./entrypoint"]
   prod: ["./entrypoint"]
+  test: ["RAILS_ENV=test rails", "scripts:test"]
 
   system:
     dev:
