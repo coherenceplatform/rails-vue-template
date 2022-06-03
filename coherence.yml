@@ -18,6 +18,7 @@ backend:
   url_path: /api/
   repo_path: backend
   migration: ["rails", "db:migrate"]
+  test: ["bundle", "exec", "rails", "test"]
   dev: ["./entrypoint"]
   prod: ["./entrypoint"]
 
