@@ -59,3 +59,4 @@ echo "POSTGRESQL_URL: $POSTGRESQL_URL"
 
 #DATABASE_URL=$POSTGRESQL_URL db-migrate create initialize --sql-file
 DATABASE_URL=${POSTGRESQL_URL} rails db:migrate
+
