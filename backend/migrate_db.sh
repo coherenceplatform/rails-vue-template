@@ -51,7 +51,7 @@ else
 	if [[ ! -z "${DB_ENDPOINT}" ]]; then
         	POSTGRESQL_URL="postgres://${DB_USER}:${DB_PASSWORD}@${DB_ENDPOINT}:${DB_PORT}/${DB_NAME}?sslmode=disable"
 	else
-        	POSTGRESQL_URL="postgres://${DB_USER}:${DB_PASSWORD}@/${DB_NAME}?host=${DB_SOCKET}"
+        	POSTGRESQL_URL="postgres:///${DB_NAME}?host=${DB_SOCKET}"
 	fi
 fi
 
